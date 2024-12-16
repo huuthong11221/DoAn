@@ -1,0 +1,61 @@
+
+.register-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 100px auto; /* Căn giữa form */
+}
+
+.register-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Màu chữ tiêu đề */
+}
+
+.u-form-group {
+    margin-bottom: 15px;
+}
+
+.u-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Hiệu ứng chuyển tiếp cho viền */
+}
+
+.u-form-group input:focus {
+    border-color: #007bff; /* Màu viền khi focus */
+    outline: none; /* Bỏ viền mặc định */
+}
+
+.u-form-group button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s; /* Hiệu ứng chuyển tiếp cho màu nền */
+}
+
+.u-form-group button:hover {
+    background: #0056b3; /* Màu nền khi hover */
+}
+
+.links {
+    margin-top: 10px; /* Khoảng cách trên */
+    text-align: center; /* Căn giữa liên kết */
+}
+
+.links a {
+    color: #007bff; /* Màu chữ cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+.links a:hover {
+    color: #0056b3; /* Màu chữ khi hover */
+}
