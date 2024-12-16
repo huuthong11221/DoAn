@@ -1,0 +1,116 @@
+.cart-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #f8f9fa; /* Nền xám nhạt */
+    padding: 20px;
+    border-radius: 10px; /* Bo tròn góc */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Header */
+.cart-headerr {
+    text-align: center; /* Căn giữa nội dung */
+    border-bottom: 2px solid #000000; /* Đường viền màu xanh */
+    width: 100%; /* Đảm bảo chiều rộng 100% */
+}
+
+.cart-headerr h2 {
+    font-size: 24px; /* Kích thước chữ lớn hơn */
+    color: #333; /* Màu chữ tối */
+    margin: 10px 10px;
+}
+
+/* Cart Content */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0; /* Khoảng cách giữa các mục lớn hơn */
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px; /* Khoảng cách giữa ảnh và chi tiết sản phẩm */
+}
+
+.item-details h3 {
+    font-size: 16px; /* Kích thước chữ lớn hơn */
+    color: #333;
+}
+
+.item-details p {
+    font-size: 14px; /* Kích thước chữ lớn hơn */
+    color: #666;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.item-quantity button {
+    border: 1px solid #313234; /* Đường viền màu xanh */
+    background: #313234; /* Nền màu xanh */
+    color: #fff; /* Màu chữ trắng */
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px; /* Bo tròn góc */
+    transition: background 0.3s; /* Hiệu ứng chuyển tiếp */
+}
+
+.item-quantity button:hover {
+    background: #313234; /* Màu nền khi hover */
+}
+
+.item-remove button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #dc3545; /* Màu đỏ cho nút xóa */
+}
+
+.item-price {
+    font-weight: bold;
+    color: #000;
+    font-size: 16px; /* Kích thước chữ lớn hơn */
+}
+
+/* Cart Footer */
+.cart-footer {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 18px; /* Kích thước chữ lớn hơn */
+    font-weight: bold; /* Đậm chữ */
+}
+
+.btn-checkout, .btn-continue {
+    display: block;
+    width: 100%;
+    padding: 12px; /* Khoảng cách lớn hơn */
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #313234; /* Màu nền xanh */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Bo tròn góc */
+    transition: background 0.3s; /* Hiệu ứng chuyển tiếp */
+}
+
+.btn-checkout:hover, .btn-continue:hover {
+    background-color: #313234; /* Màu nền khi hover */
+}

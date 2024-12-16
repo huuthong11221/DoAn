@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Hữu Thống</title>
-</head>z
+</head>
 <body>
     <div class="wrapper">
         <div class="menu">
@@ -26,8 +26,8 @@
                 </li>
                 <li><a href="pages/lienhe.html">Liên hệ</a></li>
                 <li><a href="pages/login.html">Đăng nhập/Đăng ký</a></li>
-                <li><a href="./pages/giohang.html">Giỏ hàng</a>
-                    <a href="./pages/giohang.html"><i class='bx bx-shopping-bag'></i></a>
+                <li><a href="pages/giohang.html">Giỏ hàng</a> 
+                    <a href="#" id="openCart"><i class='bx bx-shopping-bag'></i></a>
                 </li>
                 <li>
                     <form action="#" method="get" class="search-form">
@@ -113,6 +113,20 @@
                 </div>
             </div>
         </div>
+        <div id="cart" class="cart">
+            <div class="cart-header">
+                <h2>Giỏ hàng của tôi</h2>
+                <span id="closeCart" class="close-btn">&times;</span>
+            </div>
+            <div class="cart-body">
+                <h3>Giao Hàng</h3>
+                <p>Bạn chưa có sản phẩm nào trong giỏ hàng</p>
+            </div>
+            <div class="cart-footer">
+                <!-- <button  class="view-cart-btn">XEM GIỎ HÀNG (0 SẢN PHẨM)</button> -->
+                <li><a href="./pages/giohang.html"><button class="view-cart-btn">XEM GIỎ HÀNG (0 SẢN PHẨM)</button></a></li>
+            </div>
+        </div>
     </div>
         <footer class="footer">
             <div class="container">
@@ -157,3 +171,4 @@
         </footer>
 </body>
 </html>
+<script src="js/giohang.js"></script>

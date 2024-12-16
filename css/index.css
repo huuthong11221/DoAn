@@ -11,8 +11,10 @@ html {
 .wrapper {
     width: 100%;
     margin: auto;
+    padding-top: 50px;
 }
 .menu {
+    height: 60px; /* Đặt chiều cao cố định cho menu */
     display: flex;
     justify-content: space-between; /* Đặt logo và menu ở hai bên */
     align-items: center; /* Căn giữa theo chiều dọc */
@@ -23,6 +25,7 @@ html {
     width: 100%; /* Chiếm toàn bộ chiều rộng */
     z-index: 1000; /* Đảm bảo menu nằm trên cùng các phần tử khác */
 }
+
 
 .logo-container {
     flex: 0 0 auto; /* Không cho logo co giãn */
@@ -56,6 +59,7 @@ html {
     font-weight: bold;
     cursor: pointer; /* Thay đổi biểu tượng chuột thành bàn tay */
 }
+
 .menu-items li:hover .dropdown {
     display: block; /* Hiển thị danh sách con khi rê chuột vào mục cha */
 }
@@ -280,6 +284,65 @@ html {
     background: #0056b3;
 }
 
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Giỏ hàng ẩn ban đầu */
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Header giỏ hàng */
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #000;
+    background-color: #fff;
+}
+
+.cart-header h2 {
+    font-size: 20px;
+}
+
+.close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Nội dung giỏ hàng */
+.cart-body {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer giỏ hàng */
+.cart-footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 2px solid #000;
+}
+
+.view-cart-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
 .footer {
     background: #333; /* Màu nền tối */
     color: #fff; /* Màu chữ sáng */
